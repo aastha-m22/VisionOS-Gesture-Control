@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🖐️ VisionOS Gesture Control
+#  VisionOS Gesture Control
 
 **Control your computer with your bare hands — no mouse, no touchscreen, just a webcam.**
 
@@ -20,7 +20,7 @@ screenshots and control media — entirely through hand gestures.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Adaptive cursor control** — index-finger pointing drives the cursor, smoothed
   by a **One Euro Filter** (Casiez et al., CHI 2012): heavy smoothing when your
@@ -52,18 +52,18 @@ screenshots and control media — entirely through hand gestures.
 
 ## 🎬 Demo
 
-> _Add a short screen-capture GIF here once recorded — drop it in `assets/` and
-> reference it below._
+## Demo Video
 
-```
-assets/demo.gif
-```
+[Watch Demo](./assets/demo.mp4)
 
-| Cursor & click | Volume control | Live dashboard |
-|:--:|:--:|:--:|
-| _screenshot_ | _screenshot_ | _screenshot_ |
+## Screenshots
 
-## 📦 Installation
+
+![Scroll up](screenshots/visionos_20260618_220656.png)
+
+
+
+##  Installation
 
 **Requirements:** Python 3.9+, a webcam.
 
@@ -85,7 +85,7 @@ Optional OS-specific backends are installed automatically where relevant
 platform, the corresponding feature simply disables itself with a warning rather
 than crashing.
 
-## 🚀 Usage
+## Usage
 
 ```bash
 # Run with the default (General) profile
@@ -146,7 +146,7 @@ console command and `python -m visionos`, both equivalent to `python main.py`.
 | `S` | Open the settings panel |
 | `1` / `2` / `3` | Switch to General / Gamer / Designer profile |
 
-## 🤚 Gesture reference
+##  Gesture reference
 
 The cursor always follows your **index fingertip**, so pointing works no matter
 which gesture is active. Rules are evaluated by priority (a fist is tested before
@@ -170,7 +170,7 @@ Single-frame misfires are suppressed by a majority-vote stabilisation window, so
 the gesture that actually fires is the one you're *holding*, not a momentary
 flicker.
 
-## 🧠 Architecture
+##  Architecture
 
 A layered pipeline with a strict downward dependency direction. MediaPipe — the
 one heavyweight dependency — is quarantined in a single module so every layer
@@ -222,7 +222,7 @@ visionos-gesture-control/
 └── pyproject.toml
 ```
 
-## 🧪 Testing
+##  Testing
 
 Gesture logic, smoothing, configuration and metrics are covered by unit tests
 that build **synthetic hand poses**, so the suite runs anywhere — no webcam, no
@@ -237,7 +237,7 @@ pytest -q
 33 passed
 ```
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 **`AttributeError: module 'mediapipe' has no attribute 'solutions'`**
 You have a very new MediaPipe build that removed the legacy API. The tracker
@@ -261,7 +261,7 @@ to preview detection without controlling the OS.
 installed for your platform; the app logs a warning and keeps running. Run with
 `--debug` to see which controller was disabled and why.
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] **Learned gesture model** — train a CNN/LSTM on collected landmark data and
       load it through the existing `GestureBackend` interface (zero changes
@@ -275,13 +275,13 @@ installed for your platform; the app logs a warning and keeps running. Run with
 - [ ] **Two-handed gestures** — zoom / rotate / multi-cursor.
 - [ ] **Gesture macro recorder** — bind custom poses to custom actions.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! See [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) for
 setup, conventions, and step-by-step guides to adding a new gesture or plugging
 in an ML backend.
 
-## 📄 License
+##  License
 
 Released under the [MIT License](LICENSE) © 2026 Aastha Mahajan.
 
