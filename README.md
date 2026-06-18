@@ -58,8 +58,7 @@ screenshots and control media — entirely through hand gestures.
 
 ## Screenshots
 
-
-![Scroll up](screenshots/visionos_20260618_220656.png)
+![Gesture Control](screenshots/visionos_20260618_220656.png)
 
 
 
