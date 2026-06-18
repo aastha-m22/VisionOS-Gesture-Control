@@ -286,27 +286,4 @@ Released under the [MIT License](LICENSE) © 2026 Aastha Mahajan.
 
 ---
 
-<details>
-<summary><strong>Résumé / portfolio bullet points</strong> (click to expand)</summary>
 
-ATS-friendly bullets describing this project:
-
-- Built a real-time, touchless computer-control system in **Python** using
-  **OpenCV** and **MediaPipe**, translating webcam hand gestures into mouse,
-  scroll, volume, brightness, screenshot and media actions at interactive frame
-  rates.
-- Engineered an **adaptive cursor pipeline** with the **One Euro Filter** to
-  resolve the precision-vs-latency trade-off, plus a temporal gesture classifier
-  (majority-vote stabilisation and double-click promotion) to eliminate
-  single-frame misfires.
-- Designed a **layered, SOLID architecture** isolating the MediaPipe dependency
-  behind one module, enabling a **synthetic-hand unit-test suite (33 tests)** that
-  runs in CI without a camera.
-- Implemented **cross-platform OS controllers** (Windows/macOS/Linux) with
-  graceful degradation, **typed JSON-backed user profiles**, a live OpenCV HUD
-  dashboard, and a Tkinter settings panel.
-- Built the gesture classifier behind a **swappable backend interface** with a
-  dataset-collection utility, making the system **ML-ready** for a future trained
-  model with no changes to the surrounding pipeline.
-
-</details>
