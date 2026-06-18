@@ -43,11 +43,11 @@ htmlcov/
 Thumbs.db
 
 # ─── Project runtime artefacts (keep the dirs, ignore the contents) ──────────
-screenshots/*.png
+#screenshots/*.png
 datasets/*.csv
 logs/
 *.log
 
 # ─── Captured / generated assets ─────────────────────────────────────────────
 assets/*.gif
-assets/*.mp4
+#assets/*.mp4
