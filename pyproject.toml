@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visionos-gesture-control"
+version = "1.0.0"
+description = "Real-time touchless computer control driven by webcam hand gestures (OpenCV + MediaPipe)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Aastha Mahajan" }]
+keywords = [
+    "computer-vision",
+    "human-computer-interaction",
+    "mediapipe",
+    "opencv",
+    "gesture-recognition",
+    "hci",
+    "accessibility",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+    "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+]
+dependencies = [
+    "opencv-python>=4.8",
+    "mediapipe>=0.10.9,<0.10.15",
+    "numpy>=1.24",
+    "pyautogui>=0.9.54",
+    "psutil>=5.9",
+    "mss>=9.0",
+    "screen-brightness-control>=0.21",
+    "pycaw>=20230407 ; sys_platform == 'win32'",
+    "comtypes>=1.2 ; sys_platform == 'win32'",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.urls]
+Homepage = "https://github.com/aastha-m22/visionos-gesture-control"
+Repository = "https://github.com/aastha-m22/visionos-gesture-control"
+
+[project.scripts]
+visionos = "visionos.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+filterwarnings = ["ignore::DeprecationWarning"]

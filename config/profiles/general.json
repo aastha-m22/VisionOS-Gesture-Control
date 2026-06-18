@@ -1,0 +1,10 @@
+{
+  "profile_name": "General",
+  "camera": { "index": 0, "width": 1280, "height": 720, "flip_horizontal": true },
+  "tracking": { "max_hands": 1, "detection_confidence": 0.7, "tracking_confidence": 0.6, "model_complexity": 1 },
+  "smoothing": { "min_cutoff": 1.0, "beta": 0.007, "d_cutoff": 1.0, "sensitivity": 1.6 },
+  "thresholds": { "pinch": 0.35, "spread": 0.9, "fist_curl": 0.55 },
+  "controls": { "scroll_speed": 120, "volume_step": 2.0, "brightness_step": 2.0, "screenshot_dir": "screenshots", "cursor_margin": 0.12 },
+  "ui": { "theme": "dark", "show_dashboard": true, "show_skeleton": true, "history_length": 8 },
+  "action_map": {}
+}

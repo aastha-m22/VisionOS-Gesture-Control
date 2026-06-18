@@ -1,0 +1,10 @@
+{
+  "profile_name": "Gamer",
+  "camera": { "index": 0, "width": 1280, "height": 720, "flip_horizontal": true },
+  "tracking": { "max_hands": 1, "detection_confidence": 0.6, "tracking_confidence": 0.5, "model_complexity": 0 },
+  "smoothing": { "min_cutoff": 1.7, "beta": 0.02, "d_cutoff": 1.0, "sensitivity": 2.4 },
+  "thresholds": { "pinch": 0.4, "spread": 0.85, "fist_curl": 0.6 },
+  "controls": { "scroll_speed": 180, "volume_step": 4.0, "brightness_step": 3.0, "screenshot_dir": "screenshots", "cursor_margin": 0.08 },
+  "ui": { "theme": "neon", "show_dashboard": true, "show_skeleton": false, "history_length": 6 },
+  "action_map": {}
+}

@@ -1,0 +1,20 @@
+# ─── Core runtime ────────────────────────────────────────────────────────────
+opencv-python>=4.8           # webcam capture + HUD rendering
+# Pinned to a build that ships the stable `solutions.hands` API (tested).
+# The tracker also auto-falls-back to the newer Tasks API if you have a newer
+# MediaPipe, but this range is the recommended, verified path.
+mediapipe>=0.10.9,<0.10.15   # hand landmark detection
+numpy>=1.24                  # array math (pulled in by the above too)
+pyautogui>=0.9.54            # cross-platform mouse / keyboard / media keys
+
+# ─── Optional but recommended (graceful-degrade if missing) ─────────────────
+psutil>=5.9                  # live CPU / memory metrics on the dashboard
+mss>=9.0                     # fast multi-monitor screenshots
+screen-brightness-control>=0.21  # brightness gesture control
+
+# ─── Windows-only audio backend (no-ops elsewhere) ──────────────────────────
+pycaw>=20230407 ; sys_platform == "win32"
+comtypes>=1.2 ; sys_platform == "win32"
+
+# ─── Development / testing ───────────────────────────────────────────────────
+pytest>=7.4

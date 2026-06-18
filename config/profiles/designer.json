@@ -1,0 +1,10 @@
+{
+  "profile_name": "Designer",
+  "camera": { "index": 0, "width": 1920, "height": 1080, "flip_horizontal": true },
+  "tracking": { "max_hands": 1, "detection_confidence": 0.8, "tracking_confidence": 0.7, "model_complexity": 1 },
+  "smoothing": { "min_cutoff": 0.6, "beta": 0.003, "d_cutoff": 1.0, "sensitivity": 1.1 },
+  "thresholds": { "pinch": 0.3, "spread": 0.95, "fist_curl": 0.5 },
+  "controls": { "scroll_speed": 80, "volume_step": 1.0, "brightness_step": 1.0, "screenshot_dir": "screenshots", "cursor_margin": 0.15 },
+  "ui": { "theme": "light", "show_dashboard": true, "show_skeleton": true, "history_length": 10 },
+  "action_map": {}
+}
