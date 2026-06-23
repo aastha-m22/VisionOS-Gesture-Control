@@ -50,7 +50,7 @@ screenshots and control media — entirely through hand gestures.
   exception hierarchy, graceful degradation when an OS backend is missing, and a
   synthetic-hand test suite that runs **without a camera**.
 
-## 🎬 Demo
+##  Demo
 
 ## Demo Video
 
